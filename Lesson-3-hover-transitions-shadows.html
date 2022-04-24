@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buttons</title>
+</head>
+<style>
+  .subscribe-button {
+    background-color: rgb(200, 0, 0);
+    color: white;
+    border: none;
+    height: 41px;
+    width: 105px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: opacity 0.15s;
+      /*
+      transition property takes two values. First is what we want to transition and the second is how long this transition will take.
+      A general good duration is 0.15 seconds.
+      */
+  }
+
+  /*
+  The reason to make a seprate '.subscribe-button' button is to have it have seprate state only when the mouse action is triggered in addtion to the regular button state. 
+  
+  IE mouse hovering over it with a Pseudo class. the syntax for that is " :hover" right after the class/Id.
+
+  Opacity property tells us how "see-through" or fade-out an HTML Element is. It takes a value between 0 and 1.
+
+  IMPORTANT
+  Why you don't add the Opacity property into the class/id with the hover Psuedo class is because:
+  
+  https://youtu.be/G3e-cpL7ofc?t=3337
+
+  SSD explains that, by doing that it only applies while your mouse is hovering so when your mouse moves away it no longer is hovering on it and so the properties don't trigger. While if you put the Opacity on the orignal class/Id it will register for the whole duration.
+
+  */
+  .subscribe-button:hover {
+    /* opacity: 1; */
+    opacity: 0.8;
+  }
+
+  .subscribe-button:active {
+    opacity: 0.5;
+  }
+
+  .join-button {
+    background-color: white;
+    border-color: rgb(41, 118, 211);
+    border-style: solid;
+    border-width: 1px;
+    color: rgb(41, 118, 211);
+    height: 36px;
+    width: 62px;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s;
+      /*
+      You can target multiple propertes. Use a comma and to add more.
+      Without the ", color 0.15s;" the join button's text is out of sync with the button's transition so it must be targeted & synced with the same time as your over value.
+      */
+  }
+
+  .join-button:hover {
+    background-color: rgb(41, 118, 211);
+    color: white;
+      /* we're inverting the orignal bg color and text color by choosing these colors */
+  }
+
+  .join-button:active {
+    opacity: .7;
+  }
+
+  .tweet-button {
+    background-color: rgba(13, 116, 206, 0.903);
+    color: white;
+    border: none;
+    height: 40px;
+    width: 78px;
+    border-radius: 20px;
+      /* a trick to get the radius to look like the example is to take 
+      the lowest value from either the height or width and divide that in half.  */
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: box-shadow 0.15s;
+  }
+
+  .tweet-button:hover {
+      /* box-shadow: 10px 0 0 black; */
+        /*This left most index is horizontal values and this will create a shadow 10 px to the right. */
+    
+    /* box-shadow: 0 10px 0 black;  */
+        /* This middle index is vertial values and this will create a shadow 10 px to the right. */
+    /* box-shadow: 0 0 10px black; */
+        /*This right numeral index is to blur and this will create an overall blured shadow.
+
+        The last index is for color. */
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15);
+      /* 
+      To imitate a shadow for the button. We have to use rgba. The 'a' means opacity. A natual approximate is to go faint on the values. 0.15 works well. You don't want them too noticable. You want them to be subtle.
+      */
+
+      /* 
+      Important
+      The reason you put this property onto a seprate ".tweet-button:hover" is because you want them to be seprate states.
+
+      On hover: do this in addition to the origanl set of properties.
+      */
+    }
+
+</style>
+
+<body>
+  <p>
+    Not sure what to do?
+  </p>
+
+  <p>
+    Try Googling what you're trying to do.
+  </p>
+  <button class="subscribe-button">
+    SUBSCRIBE
+  </button>
+
+  <button class="join-button">
+    JOIN
+  </button>
+
+  <button class="tweet-button">
+    Tweet
+  </button>
+
+</body>
+
+</html>

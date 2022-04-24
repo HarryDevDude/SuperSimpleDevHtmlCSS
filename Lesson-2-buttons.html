@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buttons</title>
+</head>
+<style>
+  button.subscribe-button {
+    background-color: rgb(200, 0, 0);
+    color: white;
+    border: none;
+    height: 41px;
+    width: 105px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  .join-button {
+    background-color: white;
+    border-color: rgb(41, 118, 211);
+    border-style: solid;
+    border-width: 1px;
+    color: rgb(41, 118, 211);
+    height: 36px;
+    width: 62px;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  .tweet-button {
+    background-color: rgba(13, 116, 206, 0.903);
+    color: white;
+    border: none;
+    height: 40px;
+    width: 78px;
+    border-radius: 20px;
+    /* a trick to get the radius to look like the example is to take 
+    the lowest value from either the height or width and divide that in half.  */
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 8px;
+  }
+
+</style>
+
+<body>
+  <p>
+    Not sure what to do?
+  </p>
+
+  <p>
+    Try Googling what you're trying to do.
+  </p>
+  <button class="subscribe-button">
+    SUBSCRIBE
+  </button>
+
+  <button class="join-button">
+    JOIN
+  </button>
+
+  <button class="tweet-button">
+    Tweet
+  </button>
+
+  <!-- **************************************************************************************************************************************************     NOTES
+
+    started learning with SuperSimpleDev around noon. Curently it is 1:32pm 4/23/22/. And after 
+    tweeting out "Remember your 'WHY'. It'll keep you going.", it helped wake me back up.
+
+    General Technique is to:
+    1. Create element with HTML
+    2. Style with CSS one-by-one
+
+     button {
+        background-color: red;
+        color: white;
+        border: none;
+        height: 36px;
+    } 
+
+    Button is called a CSS Selector. The selector helps target which elements we're targeting.
+    
+    Background-color is a CSS property. It tells the computer what we are changing.
+
+    Red is a CSS Value. This tells teh computer what we're changing the property to.
+
+    Px represents Pixels. It is unit of measurement in the digital world.
+
+    Color picker for VS code:
+    https://youtu.be/G3e-cpL7ofc?t=1570
+    You can hover over the color swatch and a Color picker pop up will show up.
+
+    RGB value another way of measuring color. It is a more precise way of measuring color than just stating a word like: 'red' or 'white'.
+        -The way that RGB works is pretty much every color can be created using a combination of: Red, Green and Blue. That's what RGB stands for.
+
+        rgb (200, 0, 0) means Red = 200, Green = 0, Blue = 0.
+
+        The minimun value is 0 and the max is 255.
+
+        If all the values are set to 0 you get Black.
+        If all the values are set to 255 you get White.
+
+    Border-radius is a property takes a px measurement along with many other units of measurement. The higher the value the more round the corners will be.
+
+    Use the Cursor property changes the mouse to various mouse pointers and mouse states.
+
+*************************************************************************
+   Class Attribute
+*************************************************************************
+Because we now have multiple buttons we need to start targeting specific buttons. We use a class to target them.
+
+button.subscribe-button {
+      background-color: rgb(200, 0, 0);
+      color: white;
+      border: none;
+      height: 50px;
+      width: 105px;
+      border-radius: 6px;
+      cursor: pointer;
+            }
+
+A Class helps identify an element. Use semantic naming conventions to help specify what you are targeting.
+    .subscribe-button, the '.' in front of the "button" element is now a the class for that CSS rule.
+
+Using the border-style: solid; Attribute we made it the border all that one blue color.
+
+*************************************************************************
+   Margins
+*************************************************************************
+At this point our buttons are very close together. We need to fix that. Adding space around an Element is called Margin.
+
+utton.subscribe-button {
+      background-color: rgb(200, 0, 0);
+      color: white;
+      border: none;
+      height: 50px;
+      width: 105px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-right:
+
+
+
+-->
+</body>
+
+</html>

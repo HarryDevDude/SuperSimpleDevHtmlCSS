@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Challenge</title>
+</head>
+<!--
+  4/23/22 
+  Decided to try the exercises and challege for Lesson 3 by SuperSimpleDev:
+  https://youtu.be/G3e-cpL7ofc?t=2663
+  took me about 40ish mins.
+-->
+<style>
+  button {
+    display:block ;
+    margin-bottom: 13px;
+    
+  }
+  .uber{
+    background-color: black;
+    color: white;
+    /* margin-bottom: 10px; */
+    height: 40px;
+    width: 120px;
+    font-size: 10;
+    border-style: none;
+    /* border-radius: 5px; */
+    cursor: pointer;
+    
+  }
+
+  .amazon {
+    background-color: rgb(255, 216, 20);
+    color: black;
+    border: none;
+    height: 30px;
+    width: 175px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer
+  }
+
+.github {
+  background-color: rgb(46, 164, 79);
+  color: white;
+  border: none;
+  height: 38px;
+  width: 115px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.bootstrap-get-started {
+  background-color: rgb(121, 82, 179);
+  color: white;
+  height: 40px;
+  width: 120px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+
+.bootstrap-download {
+  background-color: white;
+  color: rgb(108, 117, 125);
+  height: 40px;
+  width: 120px;
+  border-radius: 5px;
+  border-style: solid;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+
+}
+
+.linkedIn-apply {
+  background-color: rgb(10, 102, 194);
+  color: white;
+  border: none;
+  height: 40px;
+  width: 225px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.linkedIn-save {
+  background-color: white;
+  color: rgb(10, 102, 194);
+  height: 40px;
+  width: 78px;
+  border-radius: 20px;
+  border-style: solid;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 35px;
+}
+
+/*  Challenge Exercise     */
+a {
+  color: rgb(0, 113, 133);
+}
+
+.nike-text{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.price {
+  color: rgb(0, 118, 0);
+  font-weight: bold;
+}
+
+.amazonCopy {
+    background-color: rgb(255, 216, 20);
+    color: black;
+    border: none;
+    height: 30px;
+    width: 175px;
+    border-radius: 20px;
+    font-size: 17px;
+    cursor: pointer
+  }
+
+  .amazonBuyNow {
+    background-color: rgb(255, 164, 28);
+    color: black;
+    border: none;
+    height: 30px;
+    width: 175px;
+    border-radius: 20px;
+    /* font-size: 16px; */
+    font-size: 17px;
+    /* font-weight: bold; */
+    cursor: pointer
+  }
+
+</style>
+
+<body>
+    <div>
+      <label for="uber">2a. Uber</label>
+        <button class="uber">
+            Resquest now
+       </button>
+    </div>
+    <div>
+      <label for="amazon">2b. Amazon</label>
+        <button class="amazon">
+          Add to Cart
+       </button>
+    </div>
+    <div>
+      <label for="github">2c. GitHub</label>      
+        <button class="github">
+          Sign up
+        </button>
+    <div>
+      <label for="bootstrap">2d. Bootstrap</label>      
+        <button class="bootstrap-get-started">
+          Get Started
+        </button>
+    </div>
+    <div>
+        <button class="bootstrap-download">
+          Download
+        </button>
+    </div>  
+    <div>
+      <label for="LinkedIn">2e. LinkedIn</label> 
+        <button class="linkedIn-apply">
+          Apply on company website
+        </button>
+    </div>
+    <div>
+        <button class="linkedIn-save">
+          Save
+        </button>
+    <div>
+      <a href="https://smile.amazon.com">Back to Amazon Smile</a>
+    </div>
+    <div class="nike-text">
+      <p>Nike Black Running Shoes</p>
+    </div>
+    <div class="price">
+      <p>$39 - in stock.</p>
+    </div>
+    <div>
+      <p>Free delivery tomorrow.</p>
+    </div>
+    <div>
+      <button class="amazonCopy">Add to Cart</button>
+    </div>
+    <div>
+      <button class="amazonBuyNow">Buy now</button>
+    </div>
+</body>
+</html>
